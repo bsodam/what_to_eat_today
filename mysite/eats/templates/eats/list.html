@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>오늘뭐먹지</title>
+</head>
+<body>
+    {% if restaurant_list %}
+    <table border="1">
+        <th>이름</th>
+        <th>카테고리</th>
+        <th>주소</th>
+        <th>부연설명</th>
+        {% for restaurant in restaurant_list %}
+        <tr>
+            <td>{{ restaurant.restaurant_name }}</td>
+            <td>{{ restaurant.category }}</td>
+            <td>{{ restaurant.address }}</td>
+            <td>{{ restaurant.info }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    {% else %}
+    <p>등록된 식당이 없습니다.</p>
+    {% endif %}
+</body>
+</html>

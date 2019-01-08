@@ -13,3 +13,7 @@ class ListView(generic.ListView):
 
     def get_queryset(self):
         return Restaurant.objects.order_by('id')
+
+class RestaurantCreate(generic.CreateView):
+    model = Restaurant
+    fields = ['restaurant_name', 'category', 'address', 'info']

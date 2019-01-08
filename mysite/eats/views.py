@@ -7,6 +7,15 @@ from eats.models import Restaurant
 class IndexView(generic.TemplateView):
     template_name = 'eats/index.html'
 
+class ResultView(generic.ListView):
+    template_name = 'eats/result.html'
+    context_object_name = 'random_restaurant'
+
+    def get_queryset(self):
+        return Restaurant.objects.order_by('?').first()
+
+
+
 class ListView(generic.ListView):
     template_name = 'eats/list.html'
     context_object_name = 'restaurant_list'

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66334894-8943-4b8e-a67e-b7b09dd47821" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mysite/eats/templates/eats/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/eats/templates/eats/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/eats/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/eats/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/eats/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/eats/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/eats/templates/eats/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/eats/templates/eats/list.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,14 +12,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/eats/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="180">
               <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/eats/templates/eats/restaurant_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -56,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/eats/templates/eats/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="28" />
+            <state relative-caret-position="282">
+              <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -84,7 +91,6 @@
         <option value="$PROJECT_DIR$/mysite/mysite/settings.py" />
         <option value="$PROJECT_DIR$/mysite/eats/models.py" />
         <option value="$PROJECT_DIR$/mysite/eats/admin.py" />
-        <option value="$PROJECT_DIR$/mysite/eats/templates/eats/list.html" />
         <option value="$PROJECT_DIR$/mysite/eats/forms.py" />
         <option value="$PROJECT_DIR$/mysite/eats/templates/eats/create.html" />
         <option value="$PROJECT_DIR$/mysite/mysite/urls.py" />
@@ -92,6 +98,7 @@
         <option value="$PROJECT_DIR$/mysite/eats/templates/eats/result.html" />
         <option value="$PROJECT_DIR$/mysite/eats/templates/eats/index.html" />
         <option value="$PROJECT_DIR$/mysite/eats/views.py" />
+        <option value="$PROJECT_DIR$/mysite/eats/templates/eats/list.html" />
       </list>
     </option>
   </component>
@@ -219,7 +226,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.43811074" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33387622" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -264,13 +271,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/eats/templates/eats/restaurant_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/mysite/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -298,6 +298,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/eats/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/eats/templates/eats/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -305,20 +315,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/eats/templates/eats/list.html">
+    <entry file="file://$PROJECT_DIR$/mysite/eats/templates/eats/restaurant_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="28" />
+        <state relative-caret-position="150">
+          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/eats/views.py">
+    <entry file="file://$PROJECT_DIR$/mysite/eats/templates/eats/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="282">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
         </state>
       </provider>
     </entry>

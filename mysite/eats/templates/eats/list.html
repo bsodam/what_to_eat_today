@@ -7,12 +7,14 @@
 <body>
     {% if restaurant_list %}
     <table border="1">
+        <th>선택</th>
         <th>이름</th>
         <th>카테고리</th>
         <th>주소</th>
         <th>부연설명</th>
         {% for restaurant in restaurant_list %}
         <tr>
+            <td><input type="checkbox" name="check"></td>
             <td>{{ restaurant.restaurant_name }}</td>
             <td>{{ restaurant.category }}</td>
             <td>{{ restaurant.address }}</td>
@@ -20,6 +22,7 @@
         </tr>
         {% endfor %}
     </table>
+    <input type="submit" value="삭제">
 
     {% else %}
     <p>등록된 식당이 없습니다.</p>

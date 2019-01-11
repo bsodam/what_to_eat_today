@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>오늘뭐먹지</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block content %}
+
     {% if restaurant_list %}
     <table border="1">
         <th>선택</th>
@@ -27,5 +24,5 @@
     {% else %}
     <p>등록된 식당이 없습니다.</p>
     {% endif %}
-</body>
-</html>
+
+{% endblock content %}

@@ -1,0 +1,5 @@
+<h1>식당 삭제</h1>
+<form method="post">{% csrf_token %}
+    Are you sure to delete "{{ object }}" ?
+    <input type="submit" value="확인" />
+</form>

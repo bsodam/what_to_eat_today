@@ -1,4 +1,5 @@
 from django.urls import path
+from django.contrib.auth import views as auth_views
 from . import views
 
 app_name = 'eats'
@@ -8,4 +9,5 @@ urlpatterns = [
     path('list/', views.ListView.as_view(), name='list'),
     path('add/', views.RestaurantCreate.as_view(), name='add'),
     path('delete/<int:pk>', views.DeleteView.as_view(), name='delete'),
+    path('login/', auth_views.LoginView.as_view(), name='login'),
 ]

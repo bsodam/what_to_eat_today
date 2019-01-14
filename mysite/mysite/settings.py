@@ -25,7 +25,7 @@ SECRET_KEY = '$uxl!(lil=*@sj4yf5cp4g31wfd&^7gkk#a=od%#umnv8e0mu%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['bsodam.pythonanywhere.com']
+ALLOWED_HOSTS = ['bsodam.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
@@ -120,3 +120,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'www_dir', 'static')
+
+
+LOGIN_REDIRECT_URL='/eats'

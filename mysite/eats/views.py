@@ -31,3 +31,4 @@ class RestaurantCreate(generic.CreateView):
     model = Restaurant
     fields = ['restaurant_name', 'category', 'address', 'info']
     success_url = '/eats/list'
+

@@ -15,6 +15,10 @@ class ResultView(generic.ListView):
         return Restaurant.objects.order_by('?').first()
 
 
+class DeleteView(generic.DeleteView):
+    model = Restaurant
+    success_url = '/eats/list'
+
 
 class ListView(generic.ListView):
     template_name = 'eats/list.html'

@@ -12,7 +12,11 @@ from eats.models import Restaurant
 class IndexView(generic.TemplateView):
     template_name = 'eats/index.html'
 
-class ResultView(generic.ListView):
+    def get(self, request, *args, **kwargs):
+        context = {'username': request.user.username}
+        return render(request, 'eats/index.html', context=context)
+
+class ResultView(LoginRequiredMixin, generic.ListView):
     template_name = 'eats/result.html'
     context_object_name = 'random_restaurant'
 
@@ -32,7 +36,7 @@ class ListView(LoginRequiredMixin, generic.ListView):
     def get_queryset(self):
         return Restaurant.objects.order_by('id')
 
-class RestaurantCreate(generic.CreateView):
+class RestaurantCreate(LoginRequiredMixin, generic.CreateView):
     model = Restaurant
     fields = ['restaurant_name', 'category', 'address', 'info']
     success_url = '/eats/list'
@@ -44,6 +48,12 @@ class UserCreateView(generic.CreateView):
 
 class RegisterdView(generic.TemplateView):
     template_name = 'eats/registered.html'
+
+    def get(self, request, *args, **kwargs):
+        context = {'username': request.user.username}
+        return render(request, 'eats/registered.html', context=context)
+
+
 
 @login_required
 def profile(request):

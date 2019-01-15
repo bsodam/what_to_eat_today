@@ -123,5 +123,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'www_dir', 'static')
 
 
 LOGIN_REDIRECT_URL='/eats'
-LOGOUT_REDIRECT_URL='/eats/login'
+LOGOUT_REDIRECT_URL='/eats'
 LOGIN_URL = '/eats/login'

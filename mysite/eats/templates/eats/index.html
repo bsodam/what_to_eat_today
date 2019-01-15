@@ -5,7 +5,12 @@
     <li><a href="/eats/result">랜덤뽑기</a></li>
     <li><a href="/eats/add">식당추가</a></li>
     <li><a href="/eats/list">리스트보기</a></li>
-    <li><a href="/eats/login">로그인</a></li>
-    <li><a href="/eats/signup">회원가입</a></li>
+
+    {% if username %}
+	<p>{{ username }}님 환영합니다. <a href="/eats/logout">로그아웃</a></p>
+	{% else %}
+	<p><a href="/eats/login">로그인</a> 해 주세요. 계정이 없으신가요? <a href="/eats/signup">회원가입</a></p>
+	{% endif %}
+
 </ul>
 {% endblock content %}

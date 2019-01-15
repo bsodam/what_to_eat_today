@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{{ data.is_authenticated }}
+<ul>
+    {% for key,value in data.items %}
+        {{ key }} : {{ value }} <br>
+    {% endfor %}
+
+</ul>
+
+{% endblock content %}

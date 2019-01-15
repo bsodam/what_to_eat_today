@@ -21,7 +21,7 @@ class ResultView(LoginRequiredMixin, generic.ListView):
     context_object_name = 'random_restaurant'
 
     def get_queryset(self):
-        return Restaurant.objects.order_by('?').first()
+        return Restaurant.objects.filter(user_name=self.request.user).order_by('?').first()
 
 
 class DeleteView(generic.DeleteView):
@@ -34,7 +34,7 @@ class ListView(LoginRequiredMixin, generic.ListView):
     context_object_name = 'restaurant_list'
 
     def get_queryset(self):
-        return Restaurant.objects.order_by('id')
+        return Restaurant.objects.filter(user_name=self.request.user)
 
 class RestaurantCreate(LoginRequiredMixin, generic.CreateView):
     model = Restaurant

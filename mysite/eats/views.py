@@ -41,6 +41,10 @@ class RestaurantCreate(LoginRequiredMixin, generic.CreateView):
     fields = ['restaurant_name', 'category', 'address', 'info']
     success_url = '/eats/list'
 
+    def form_valid(self, form):
+        form.instance.user_name = self.request.user
+        return super().form_valid(form)
+
 class UserCreateView(generic.CreateView):
     template_name = 'eats/signup.html'
     form_class = UserCreationForm

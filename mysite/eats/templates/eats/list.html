@@ -8,12 +8,14 @@
         <th>카테고리</th>
         <th>주소</th>
         <th>부연설명</th>
+        <th>등록자</th>
         {% for restaurant in restaurant_list %}
         <tr>
             <td>{{ restaurant.restaurant_name }}</td>
             <td>{{ restaurant.category }}</td>
             <td>{{ restaurant.address }}</td>
             <td>{{ restaurant.info }}</td>
+            <td>{{ restaurant.user_name}}</td>
             <td><a href="/eats/delete/{{ restaurant.id }}"><input type="submit" value="삭제"></a></td>
         </tr>
         {% endfor %}

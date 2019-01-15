@@ -6,6 +6,7 @@ class Restaurant(models.Model):
     category = models.CharField(max_length=30)
     address = models.CharField(max_length=100)
     info = models.CharField(max_length=300)
+    user_name = models.CharField(max_length=30, default="charField")
 
     def __str__(self):
         return self.restaurant_name

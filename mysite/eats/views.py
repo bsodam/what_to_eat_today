@@ -53,12 +53,6 @@ class UserCreateView(generic.CreateView):
 class RegisterdView(generic.TemplateView):
     template_name = 'eats/registered.html'
 
-    def get(self, request, *args, **kwargs):
-        context = {'username': request.user.username}
-        return render(request, 'eats/registered.html', context=context)
-
-
-
 @login_required
 def profile(request):
     if not request.user.is_authenticated:
